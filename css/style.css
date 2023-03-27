@@ -34,6 +34,11 @@ button:hover{
 }
 
 
+.center-box{
+    width: 60%;
+    margin: 0 auto;
+}
+
 /* regole header */
 
 header{
@@ -81,4 +86,66 @@ header > menu a{
 header a.menu:hover{
     background-color: rgba(0, 99, 249, 0.1);
     border-bottom: 2px solid rgb(0, 100, 249);
+}
+
+
+
+/* regole footer */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+
+}
+
+    /* footer top */
+footer div.flex{
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+footer li{
+    line-height: 180%;
+}
+
+footer ul li:first-child{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 250%;
+}
+
+footer a{
+    color: white;
+}
+
+
+    /* footer bottom */
+
+    footer div.lingua{
+        color: lightgrey;
+        border-top: 2px solid lightgrey;
+        display: inline-block;
+        padding-top: 50px;
+    }
+
+    footer select{
+        background-color: black;
+        border: 0;
+        color: lightgrey;
+    }
+
+    /* interactions footer */
+
+    footer a:hover{
+        text-decoration: underline;
+    }
+
+
+
+/* debug */
+
+.prova{
+    height: 200px;
+    width: 100%;
 }
