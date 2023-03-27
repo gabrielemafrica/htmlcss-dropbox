@@ -34,18 +34,16 @@ button:hover{
 }
 
 
-.center-box{
-    width: 60%;
-    margin: 0 auto;
-}
+
 
 /* regole header */
 
 header{
-
+    background-color: white;
     position: fixed;
     height: 80px;
     width: 100vw;
+    padding-right: 20px;
 }
 
 header > menu.flex{
@@ -89,6 +87,37 @@ header a.menu:hover{
 }
 
 
+/* main */
+
+
+
+    /* jumbotron */
+#jumbotron{
+    background-color: rgb(176, 209, 229);
+    width: 100vw;
+    padding-top: 130px;
+}
+
+.center-box.jumbotron{
+    width: 55%;
+    margin: 0 auto;   
+}
+
+main #jumbotron h1{
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+#jumbo-txt{
+    flex-basis: 40%;
+}
+#jumbo-img{
+    flex-basis: 60%;
+}
+main #jumbo-img img{
+    max-width: 100%;
+}
+
+
 
 /* regole footer */
 
@@ -97,6 +126,10 @@ footer{
     color: white;
     padding: 50px 0;
 
+}
+.center-box.footer{
+    width: 60%;
+    margin: 0 auto;
 }
 
     /* footer top */
@@ -145,7 +178,3 @@ footer a{
 
 /* debug */
 
-.prova{
-    height: 200px;
-    width: 100%;
-}
