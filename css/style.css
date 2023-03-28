@@ -124,7 +124,7 @@ header a.menu:hover{
 
 /* main */
 
-.centre-box.content{
+.center-box.content{
     width: 55%;
 }
 
@@ -274,13 +274,47 @@ color: white;
 }
 
 
-
 /* interaction piani */
 
 .circle:focus{
     outline: 4px solid rgb(0, 99, 249);
   }
 
+/* partner */
+
+.partner{
+    margin-bottom: 100px;
+}
+
+.partner .partner-img{
+    flex-basis: 60%;
+}
+.partner .partner-txt{
+    flex-basis: 40%;
+    padding: 30px 30px;
+}
+
+.partner .partner-img > img{
+    max-width: 100%;
+}
+
+.partner .partner-txt p{
+    line-height: 150%;
+    padding: 10px 0 30px 0;
+}
+
+.partner .partner-txt button{
+    padding: 10px 20px;
+    color: gray;
+    border: 1px solid grey;
+    background-color: white;
+}
+
+/* partner interactions */
+.partner .partner-txt button:hover{
+
+    background-color: rgba(0, 99, 249, 0.1);
+}
 
 
 
