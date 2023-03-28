@@ -11,12 +11,11 @@ body{
 }
 
 h2{
-    font-size: 30px;
+    font-size: 42px;
 }
 
 h4{
-    font-size: 20px;
-    line-height: 180%;
+    font-size: 24px;
 }
 
 h5{
@@ -222,6 +221,10 @@ color: white;
     margin: 0 auto;
 }
 
+.corpo-scheda h4{
+    margin-bottom: 15px;
+}
+
 
 .corpo-scheda ul{
     padding: 30px 0;
@@ -314,6 +317,32 @@ color: white;
 .partner .partner-txt button:hover{
 
     background-color: rgba(0, 99, 249, 0.1);
+}
+
+/* operazioni */
+
+.operazioni div.flex{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.operazioni h2{
+    margin-bottom: 50px;
+}
+
+.operazioni div.scheda-business{
+    flex-basis: calc(100%/3 - 20px);
+    margin-bottom: 50px;
+}
+
+.operazioni .business-img{
+    width: 100%;
+}
+.operazioni .business-img img{
+    max-width: 100%;
+}
+.operazioni h4{
+    margin-bottom: 20px;
 }
 
 
