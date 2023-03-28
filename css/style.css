@@ -7,11 +7,23 @@
 
 body{
     font-family: 'Dosis', sans-serif;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 h2{
     font-size: 30px;
+}
+
+h4{
+    font-size: 20px;
+    line-height: 180%;
+}
+
+h5{
+    font-size: 12px;
+}
+p{
+    font-size: 14px;
 }
 .flex{
     display: flex;
@@ -22,6 +34,14 @@ ul{
 
 a{
     text-decoration: none;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.blue{
+    color: rgb(0, 100, 249);
 }
 
 button{
@@ -104,7 +124,9 @@ header a.menu:hover{
 
 /* main */
 
-
+.centre-box.content{
+    width: 55%;
+}
 
     /* jumbotron */
 #jumbotron{
@@ -156,9 +178,10 @@ color: white;
 }
 
     /* piani */
-.center-box.piani{
-    width: 55%;
+
+.center-box.piani{  
     padding:60px 0;
+    margin-bottom: 60px;
 }
 
 .piani .scelta-fatturazione{
@@ -184,17 +207,78 @@ color: white;
 .piani .elenco-piani{
     justify-content: space-between;
 }
-.piani .piano{
-    flex-basis: calc(100%/3 - 40px);
+.piani .scheda-piano{
+    flex-basis: calc(100%/3 - 20px);
+    border: 1px solid rgb(208, 208, 211);
+}
+.scheda-piano .testa-scheda{
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(208, 208, 211);;
+}
+.scheda-piano .corpo-scheda{
+    padding: 15px 0;
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+.corpo-scheda ul{
+    padding: 30px 0;
+}
+
+.corpo-scheda ul > li{
+    margin-bottom: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.scheda-piano .corpo-scheda button{
+    width: 100%;
+    padding: 10px 0;
+}
+
+.corpo-scheda li > i{
+    line-height: 140%;
+}
+
+
+.acquista-ora > span{
+    display: inline-block;
+    padding: 30px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(208, 208, 211);;
+}
+
+.piani .scheda-bottom{
+    margin-top: 40px;
+}
+
+.scheda-bottom .corpo-scheda-bottom{
+    padding: 15px 0;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
 
 }
+.corpo-scheda-bottom > div{
+    flex-basis: calc((100%/3)*2);
+}
+
+.corpo-scheda-bottom button{
+    padding: 10px 25px;
+}
+.corpo-scheda-bottom p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
 
 
 /* interaction piani */
 
 .circle:focus{
     outline: 4px solid rgb(0, 99, 249);
-
   }
 
 
