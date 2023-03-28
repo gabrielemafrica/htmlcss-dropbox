@@ -7,6 +7,11 @@
 
 body{
     font-family: 'Dosis', sans-serif;
+    font-size: 11px;
+}
+
+h2{
+    font-size: 30px;
 }
 .flex{
     display: flex;
@@ -33,9 +38,16 @@ button:hover{
     background-color:  rgba(0, 99, 249, 0.6);;
 }
 
+.container-total{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-
-
+.center-box
+{
+    margin: 0 auto;
+    max-width: 1024px;
+}
 /* regole header */
 
 header{
@@ -52,7 +64,9 @@ header > menu.flex{
     /* align-items: center; */
     /* width: 100%;
     height: 100%; */
+    max-width: 1200px;
     font-size: 14px;
+    margin: 0 auto;
 }
 
 header > menu > ul{
@@ -96,12 +110,12 @@ header a.menu:hover{
 #jumbotron{
     background-color: rgb(176, 209, 229);
     width: 100vw;
+    height: 600px;
     padding-top: 130px;
 }
 
 .center-box.jumbotron{
-    width: 55%;
-    margin: 0 auto;   
+    width: 60%;
 }
 
 main #jumbotron h1{
@@ -113,9 +127,17 @@ main #jumbotron h1{
 }
 #jumbo-img{
     flex-basis: 60%;
+    height: 300px;
 }
 main #jumbo-img img{
-    max-width: 100%;
+    
+    max-height: 100%;
+    
+    
+}
+
+#jumbo-txt{
+    max-height: 100%;
 }
 
 #jumbotron button{
@@ -123,16 +145,59 @@ main #jumbo-img img{
 }
 
 #jumbotron i{
-    font-size: 40px;
-    margin: 40px 0 20px 0;
+    font-size: 30px;
+    margin: 50px 0 10px 0;
     color: black;
 }
-
 /* interaction jumbotron */
 
 #jumbotron i:hover{
-    color: white;
+color: white;
 }
+
+    /* piani */
+.center-box.piani{
+    width: 55%;
+    padding:60px 0;
+}
+
+.piani .scelta-fatturazione{
+   
+    align-items: center;
+    margin: 50px 0 40px 0;
+}
+
+.piani .circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline-offset: -3px;
+    border: 1px solid gray;
+}
+
+
+.scelta-fatturazione span{
+    margin-right: 30px;
+    margin-left: 5px;
+}
+.piani .elenco-piani{
+    justify-content: space-between;
+}
+.piani .piano{
+    flex-basis: calc(100%/3 - 40px);
+
+}
+
+
+/* interaction piani */
+
+.circle:focus{
+    outline: 4px solid rgb(0, 99, 249);
+
+  }
+
+
 
 
 /* regole footer */
@@ -145,7 +210,6 @@ footer{
 }
 .center-box.footer{
     width: 60%;
-    margin: 0 auto;
 }
 
     /* footer top */
