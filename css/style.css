@@ -11,7 +11,7 @@ body{
 }
 
 h2{
-    font-size: 42px;
+    font-size: 40px;
 }
 
 h4{
@@ -321,6 +321,10 @@ color: white;
 
 /* operazioni */
 
+.operazioni{
+    margin-bottom: 100px;
+}
+
 .operazioni div.flex{
     justify-content: space-between;
     flex-wrap: wrap;
@@ -345,6 +349,46 @@ color: white;
     margin-bottom: 20px;
 }
 
+/* clienti */
+
+.clienti{
+    margin-bottom: 150px;
+}
+.clienti a{
+    text-decoration: underline;
+    font-size: 14px;
+}
+.clienti .scopri{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+/* clienti elemento grande */
+
+.clienti .loghi {
+    flex-basis: calc(100%/3);
+    background-color: brown;
+    flex-wrap: wrap;
+}
+
+.clienti .logo-cliente{
+    flex-basis: 50%;
+    padding-top: 50%;
+    position: relative;
+    border: 1px solid blue;
+}
+.clienti .img-cliente{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    
+}
+.clienti img{
+    filter: invert(1);
+    max-width: 100%;
+}
 
 
 /* regole footer */
