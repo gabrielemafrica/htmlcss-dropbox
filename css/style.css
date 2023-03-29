@@ -355,7 +355,6 @@ color: white;
 /* clienti */
 
 .clienti{
-    margin-bottom: 150px;
     width: 100%;
 }
 .clienti a{
@@ -508,6 +507,71 @@ color: white;
   .clienti-bottom-button button:hover{
     background-color: rgba(255, 255, 255, 0.8);
   }
+
+
+  /* faq */
+
+.faq{
+    padding: 100px 0;
+}
+.faq > .content{
+    border-bottom: 1px solid gray;
+}
+
+.faq h2{
+    margin-bottom: 50px;
+    max-width: 80%;
+}
+
+.faq .domanda{
+    position: relative;
+    border-top: 1px solid gray;
+    padding: 30px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: gray;
+}
+
+.faq .fa-angle-down{
+    font-size: 12px;
+    color: black;  
+}
+
+.faq .mini-arrow{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    transition: transform 0.2s linear;
+}
+
+.faq .risposta{
+    padding-top: 30px;
+    font-weight: 500;
+    max-width: 85%;
+    display: none;
+}
+
+/* interaction faq */
+
+.faq .domanda:hover{
+    background-color: rgba(176, 209, 229, 0.4);
+}
+.faq .domanda:active{
+    background-color: rgba(176, 209, 229, 0.7);
+}
+
+.faq .domanda:active .risposta{
+    display: inline-block;
+}
+
+.faq .domanda:focus .risposta{
+    display: inline-block;
+}
+
+.faq .domanda:focus .mini-arrow{
+    transform: rotate(180deg);
+}
+
 
 /* regole footer */
 
