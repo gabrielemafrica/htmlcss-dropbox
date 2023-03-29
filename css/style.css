@@ -72,8 +72,9 @@ button:hover{
 header{
     background-color: white;
     position: fixed;
+    z-index: 90;
     height: 80px;
-    width: 100vw;
+    width: 100%;
     padding-right: 20px;
 }
 
@@ -130,7 +131,7 @@ header a.menu:hover{
     /* jumbotron */
 #jumbotron{
     background-color: rgb(176, 209, 229);
-    width: 100vw;
+    width: 100%;
     height: 600px;
     padding-top: 130px;
 }
@@ -203,6 +204,8 @@ color: white;
     margin-right: 30px;
     margin-left: 5px;
 }
+
+
 .piani .elenco-piani{
     justify-content: space-between;
 }
@@ -353,6 +356,7 @@ color: white;
 
 .clienti{
     margin-bottom: 150px;
+    width: 100%;
 }
 .clienti a{
     text-decoration: underline;
@@ -375,6 +379,7 @@ color: white;
     padding-top: 50%;
     position: relative;
     outline-offset: -10px;
+    cursor: pointer;
 }
 
 .clienti .img-cliente{
@@ -391,6 +396,10 @@ color: white;
 .clienti img{
     
     max-width: 100%;
+}
+.logo-cliente a{
+
+    cursor: pointer;
 }
 
 /* schede clienti */
@@ -415,10 +424,13 @@ color: white;
     
 }
 
-.designit, .asu, .uf, .topps, .world, .hearst, .lonely, .clear{
+.asu, .uf, .topps, .world, .hearst, .lonely, .clear{
     display: none;
 }
 
+#designit:target{
+    display: inline-block;
+}
 
 
 
@@ -456,15 +468,45 @@ color: white;
     background-color: rgb(245, 245, 245);
 }
 
+/* clienti bottom */
 
+#clienti-bottom{
+    
+    background-color: rgb(176, 209, 229);
+    justify-content: space-between;
+}
 
+#clienti-bottom > div{
+    padding: 90px 0;
+}
 
+.clienti-bottom-title{
+    flex-basis: 50%;
+}
+.clienti-bottom-button{
+    flex-basis: 50%;
+    text-align: end;   
+}
+
+.clienti-bottom-title{
+    color: rgb(106, 24, 36);
+}
+.clienti-bottom-button button{
+    margin-top: 10px;
+    padding: 10px 40px;
+    background-color: rgb(255, 255, 255);
+    color: gray;
+}
 
 /* interaction clienti */
 
 .logo-cliente:focus{
     outline: 10px solid rgba(255, 255, 255, 0.5);
     
+  }
+
+  .clienti-bottom-button button:hover{
+    background-color: rgba(255, 255, 255, 0.8);
   }
 
 /* regole footer */
