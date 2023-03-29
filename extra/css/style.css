@@ -1,0 +1,682 @@
+/* regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+    font-size: 12px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h4{
+    font-size: 24px;
+}
+
+h5{
+    font-size: 12px;
+}
+p{
+    font-size: 14px;
+}
+.flex{
+    display: flex;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.blue{
+    color: rgb(0, 100, 249);
+}
+
+button{
+    color: white;
+    background-color: rgb(0, 100, 249);
+    border: 0;
+    padding: 5px 10px;
+    /* transition: background-color 0.2s linear; */
+    cursor: pointer;
+}
+
+
+button:hover{
+    background-color:  rgba(0, 99, 249, 0.6);;
+}
+
+.container-total{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.center-box
+{
+    margin: 0 auto;
+    max-width: 1024px;
+}
+/* regole header */
+
+header{
+    background-color: white;
+    position: fixed;
+    z-index: 90;
+    height: 80px;
+    width: 100%;
+    padding-right: 20px;
+}
+
+header > menu.flex{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* width: 100%;
+    height: 100%; */
+    max-width: 1200px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+header > menu > ul{
+    height: 100%;
+}
+
+header > menu ul{
+    align-items: center;
+}
+
+header > menu li{
+    height: 80px;
+}
+
+header > menu a{
+    color: gray;
+    padding: 0 15px;
+    display: inline-block;
+    height: 80px;
+    /* background-color: brown; */
+    line-height: 80px;
+}
+
+#logo{
+    padding-top: 7px;
+}
+
+    /* interactions header */
+
+header a.menu:hover{
+    background-color: rgba(0, 99, 249, 0.1);
+    border-bottom: 2px solid rgb(0, 100, 249);
+}
+
+
+/* main */
+
+.center-box.content{
+    width: 55%;
+}
+
+    /* jumbotron */
+#jumbotron{
+    background-color: rgb(176, 209, 229);
+    width: 100%;
+    height: 600px;
+    padding-top: 130px;
+}
+
+.center-box.jumbotron{
+    width: 60%;
+}
+
+main #jumbotron h1{
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+#jumbo-txt{
+    flex-basis: 40%;
+}
+#jumbo-img{
+    flex-basis: 60%;
+    height: 300px;
+}
+main #jumbo-img img{
+    
+    max-height: 100%;
+    
+    
+}
+
+#jumbo-txt{
+    max-height: 100%;
+}
+
+#jumbotron button{
+    margin: 20px 0;
+}
+
+#jumbotron i{
+    font-size: 30px;
+    margin: 50px 0 10px 0;
+    color: black;
+}
+/* interaction jumbotron */
+
+#jumbotron i:hover{
+color: white;
+}
+
+    /* piani */
+
+.center-box.piani{  
+    padding:60px 0;
+    margin-bottom: 60px;
+}
+
+.piani .scelta-fatturazione{
+   
+    align-items: center;
+    margin: 50px 0 40px 0;
+}
+
+.piani .circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline-offset: -3px;
+    border: 1px solid gray;
+}
+
+
+.scelta-fatturazione span{
+    margin-right: 30px;
+    margin-left: 5px;
+}
+
+
+.piani .elenco-piani{
+    justify-content: space-between;
+}
+.piani .scheda-piano{
+    flex-basis: calc(100%/3 - 20px);
+    border: 1px solid rgb(208, 208, 211);
+}
+.scheda-piano .testa-scheda{
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(208, 208, 211);;
+}
+.scheda-piano .corpo-scheda{
+    padding: 15px 0;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.corpo-scheda h4{
+    margin-bottom: 15px;
+}
+
+
+.corpo-scheda ul{
+    padding: 30px 0;
+}
+
+.corpo-scheda ul > li{
+    margin-bottom: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.scheda-piano .corpo-scheda button{
+    width: 100%;
+    padding: 10px 0;
+}
+
+.corpo-scheda li > i{
+    line-height: 140%;
+}
+
+
+.acquista-ora > span{
+    display: inline-block;
+    padding: 30px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(208, 208, 211);;
+}
+
+.piani .scheda-bottom{
+    margin-top: 40px;
+}
+
+.scheda-bottom .corpo-scheda-bottom{
+    padding: 15px 0;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+.corpo-scheda-bottom > div{
+    flex-basis: calc((100%/3)*2);
+}
+
+.corpo-scheda-bottom button{
+    padding: 10px 25px;
+}
+.corpo-scheda-bottom p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* interaction piani */
+
+.circle:focus{
+    outline: 4px solid rgb(0, 99, 249);
+  }
+
+/* partner */
+
+.partner{
+    margin-bottom: 100px;
+}
+
+.partner .partner-img{
+    flex-basis: 60%;
+}
+.partner .partner-txt{
+    flex-basis: 40%;
+    padding: 30px 30px;
+}
+
+.partner .partner-img > img{
+    max-width: 100%;
+}
+
+.partner .partner-txt p{
+    line-height: 150%;
+    padding: 10px 0 30px 0;
+}
+
+.partner .partner-txt button{
+    padding: 10px 20px;
+    color: gray;
+    border: 1px solid grey;
+    background-color: white;
+}
+
+/* partner interactions */
+.partner .partner-txt button:hover{
+
+    background-color: rgba(0, 99, 249, 0.1);
+}
+
+/* operazioni */
+
+.operazioni{
+    margin-bottom: 100px;
+}
+
+.operazioni div.flex{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.operazioni h2{
+    margin-bottom: 50px;
+}
+
+.operazioni div.scheda-business{
+    flex-basis: calc(100%/3 - 20px);
+    margin-bottom: 50px;
+}
+
+.operazioni .business-img{
+    width: 100%;
+}
+.operazioni .business-img img{
+    max-width: 100%;
+}
+.operazioni h4{
+    margin-bottom: 20px;
+}
+
+/* clienti */
+
+.clienti{
+    width: 100%;
+}
+.clienti a{
+    text-decoration: underline;
+    font-size: 14px;
+}
+.clienti .scopri{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+/* clienti elemento grande */
+
+
+.clienti .loghi {
+    flex-basis: calc(100%/3);
+    flex-wrap: wrap;
+}
+
+/* modifiche */
+
+#elemento-grande{
+    position: relative;
+}
+
+.clienti .logo-cliente-sfondo{
+    flex-basis: 50%;
+    padding-top: 50%;
+    outline-offset: -10px;
+    cursor: pointer;
+    outline-offset: -10px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: center;
+    background-position-y: center;
+    /* filter: invert(100%); */
+}
+
+.scheda-cliente-nuova{
+    position: absolute;
+    background-color: brown;
+    padding: 20px 20px;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: calc(100%/3);
+}
+
+.logo-scheda-nuova{
+    width: 20%;
+}
+
+.logo-scheda-nuova img{
+    max-width: 200%;
+}
+
+.clienti .logo-cliente-sfondo.green{
+    background-color: rgb(90, 45, 92);
+    background-image: url(../img/designit.svg);
+    
+}
+
+.logo-cliente-sfondo:focus{
+    outline: 10px solid rgba(0, 0, 0, 0.5);
+    
+  }
+
+
+/* vecchio */
+
+.clienti .logo-cliente{
+    flex-basis: 50%;
+    padding-top: 50%;
+    position: relative;
+    outline-offset: -10px;
+    cursor: pointer;
+}
+
+.clienti .img-cliente{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    
+}
+.clienti img.white{
+    filter: invert(1);
+}
+.clienti img{
+    
+    max-width: 100%;
+}
+.logo-cliente a{
+
+    cursor: pointer;
+}
+
+/* schede clienti */
+
+.description .center-schede{
+    width: 85%;
+    margin: 35px auto;
+    color: lightslategray;
+}
+
+.logo-scheda{
+    width: 25%;
+    border-bottom: 1px solid rgb(225, 225, 226);
+    padding-bottom: 30px;
+}
+.logo-scheda img{
+    max-width: 200%;
+}
+
+.scheda-azienda p{
+    padding: 30px 0;
+    
+}
+
+.asu, .uf, .topps, .world, .hearst, .lonely, .clear{
+    display: none;
+}
+
+
+
+
+
+/* colori sx */
+.green{
+    background-color: rgb(152, 212, 158);
+}
+.darkred{
+    background-color: rgb(104, 0, 43);
+}
+.lightblue{
+    background-color: rgb(0, 149, 203);
+}
+.red-sx{
+    background-color: rgb(255, 0, 40);
+}
+/* colori dx */
+.red-dx{
+    background-color: rgb(227, 0, 38);
+}
+.lightgrey{
+    background-color: rgb(176, 209, 229);
+}
+.darkblue{
+    background-color: rgb(15, 7, 126);
+}
+.yellow{
+    background-color: rgb(255, 215, 76);
+}
+
+/* colore centro */
+
+.loghi.description{
+    background-color: rgb(245, 245, 245);
+}
+
+/* clienti bottom */
+
+#clienti-bottom{
+    
+    background-color: rgb(176, 209, 229);
+    justify-content: space-between;
+}
+
+#clienti-bottom > div{
+    padding: 90px 0;
+}
+
+.clienti-bottom-title{
+    flex-basis: 50%;
+}
+.clienti-bottom-button{
+    flex-basis: 50%;
+    text-align: end;   
+}
+
+.clienti-bottom-title{
+    color: rgb(106, 24, 36);
+}
+.clienti-bottom-button button{
+    margin-top: 10px;
+    padding: 10px 40px;
+    background-color: rgb(255, 255, 255);
+    color: gray;
+}
+
+/* interaction clienti */
+
+.logo-cliente:focus{
+    outline: 10px solid rgba(255, 255, 255, 0.5);
+    
+  }
+
+  .clienti-bottom-button button:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+
+  /* faq */
+
+.faq{
+    padding: 100px 0;
+}
+.faq > .content{
+    border-bottom: 1px solid gray;
+}
+
+.faq h2{
+    margin-bottom: 50px;
+    max-width: 80%;
+}
+
+.faq .domanda{
+    position: relative;
+    border-top: 1px solid gray;
+    padding: 30px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: gray;
+}
+
+.faq .fa-angle-down{
+    font-size: 12px;
+    color: black;  
+}
+
+.faq .mini-arrow{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    transition: transform 0.2s linear;
+}
+
+.faq .risposta{
+    padding-top: 30px;
+    font-weight: 500;
+    max-width: 85%;
+    display: none;
+}
+
+/* interaction faq */
+
+.faq .domanda:hover{
+    background-color: rgba(176, 209, 229, 0.4);
+}
+.faq .domanda:active{
+    background-color: rgba(176, 209, 229, 0.7);
+}
+
+.faq .domanda:active .risposta{
+    display: inline-block;
+}
+
+.faq .domanda:focus .risposta{
+    display: inline-block;
+}
+
+.faq .domanda:focus .mini-arrow{
+    transform: rotate(180deg);
+}
+
+
+/* regole footer */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+
+}
+.center-box.footer{
+    width: 60%;
+}
+
+    /* footer top */
+footer div.flex{
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+footer li{
+    line-height: 180%;
+}
+
+footer ul li:first-child{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 250%;
+}
+
+footer a{
+    color: white;
+}
+
+
+    /* footer bottom */
+
+    footer div.lingua{
+        color: lightgrey;
+        border-top: 2px solid lightgrey;
+        display: inline-block;
+        padding-top: 50px;
+    }
+
+    footer select{
+        background-color: black;
+        border: 0;
+        color: lightgrey;
+    }
+
+    /* interactions footer */
+
+    footer a:hover{
+        text-decoration: underline;
+    }
+
+
+
+/* debug */
+
