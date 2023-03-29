@@ -371,73 +371,38 @@ color: white;
 
 .clienti .loghi {
     flex-basis: calc(100%/3);
+    height: calc(100vw/3);
     flex-wrap: wrap;
 }
 
-/* modifiche */
+
 
 #elemento-grande{
     position: relative;
+    background-color: rgb(245, 245, 245);
 }
 
-.clienti .logo-cliente-sfondo{
-    flex-basis: 50%;
-    padding-top: 50%;
-    outline-offset: -10px;
-    cursor: pointer;
-    outline-offset: -10px;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position-x: center;
-    background-position-y: center;
-    /* filter: invert(100%); */
+
+.logo-cliente:focus + .off{
+    display: inline-block;
 }
 
-.scheda-cliente-nuova{
-    position: absolute;
-    background-color: brown;
-    padding: 20px 20px;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: calc(100%/3);
-}
-
-.logo-scheda-nuova{
-    width: 20%;
-}
-
-.logo-scheda-nuova img{
-    max-width: 200%;
-}
-
-.clienti .logo-cliente-sfondo.green{
-    background-color: rgb(90, 45, 92);
-    background-image: url(../img/designit.svg);
-    
-}
-
-.logo-cliente-sfondo:focus{
-    outline: 10px solid rgba(0, 0, 0, 0.5);
-    
-  }
 
 
-/* vecchio */
+
 
 .clienti .logo-cliente{
     flex-basis: 50%;
-    padding-top: 50%;
-    position: relative;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     outline-offset: -10px;
     cursor: pointer;
 }
 
 .clienti .img-cliente{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
     width: 50%;
     
 }
@@ -455,10 +420,15 @@ color: white;
 
 /* schede clienti */
 
-.description .center-schede{
-    width: 85%;
+.center-schede{
+    position: absolute;
+    width: calc(100%/3 - 60px);
+    top: 0;
+    left: calc(100%/3 + 30px); 
     margin: 35px auto;
     color: lightslategray;
+    background-color: rgb(245, 245, 245);
+    z-index: 80;
 }
 
 .logo-scheda{
@@ -475,7 +445,11 @@ color: white;
     
 }
 
-.asu, .uf, .topps, .world, .hearst, .lonely, .clear{
+.presentazione{
+    z-index: 70;
+}
+
+.off{
     display: none;
 }
 
@@ -510,11 +484,6 @@ color: white;
     background-color: rgb(255, 215, 76);
 }
 
-/* colore centro */
-
-.loghi.description{
-    background-color: rgb(245, 245, 245);
-}
 
 /* clienti bottom */
 
